@@ -17,7 +17,7 @@ class CashRegister
   
     @cart << item
     @total += price * qty
-    @last_transaction = @total
+    @last_transaction = price * qty
   end
   
   def apply_discount
