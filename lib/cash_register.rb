@@ -29,7 +29,7 @@ class CashRegister
   
 
   def items
-  #all_items = []
+ # all_items = []
     @cart.each do | item |
       for qty in 1..item[:qty] 
         all_items << item[:name]
@@ -39,7 +39,7 @@ class CashRegister
   end
 
   def void_last_transaction
-    last_transaction = all_items.length-1
+    last_transaction = @all_items.length-1
     @total = @total - last_transaction
   end
 
