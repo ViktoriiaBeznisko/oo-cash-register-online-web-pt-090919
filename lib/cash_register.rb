@@ -33,7 +33,7 @@ class CashRegister
 
   def items
   all_items = []
-    @cart.each do | item |
+    @cart.each do | i |
       #test expects product name * quantity...
       for qty in 1..item[:qty] 
         all_items << item[:name]
