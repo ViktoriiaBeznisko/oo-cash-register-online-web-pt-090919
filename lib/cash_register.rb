@@ -39,7 +39,8 @@ class CashRegister
   end
 
   def void_last_transaction
-    @total.pop
+    if @cart == nil
+      return 0.0
   end
 
 
