@@ -31,15 +31,15 @@ class CashRegister
  #   @items
  # end
 
-  def void_last_transaction
-  item_names = []
+  def items
+  all_items = []
     @cart.each do | item |
       #test expects product name * quantity...
       for qty in 1..item[:qty] 
-        item_names << item[:name]
+        all_items << item[:name]
       end 
     end 
-    item
+    all_items
   end
 
 end
