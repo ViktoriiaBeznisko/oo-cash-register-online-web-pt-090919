@@ -6,6 +6,7 @@ class CashRegister
     @total = 0
     @discount = discount
     @cart = []
+    @all_items = []
   end
 
   def add_item(name, price, qty = 1)
@@ -28,7 +29,7 @@ class CashRegister
   
 
   def items
-  all_items = []
+  #all_items = []
     @cart.each do | item |
       for qty in 1..item[:qty] 
         all_items << item[:name]
