@@ -42,7 +42,7 @@ class CashRegister
     if @cart == nil
       return 0.0
   end
-
+end
 
 end
 
